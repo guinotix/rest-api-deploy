@@ -1,0 +1,28 @@
+### Obtener todas las pelis
+GET http://localhost:1234/movies
+
+### Obtener la peli numero 1
+GET http://localhost:1234/movies/1
+
+### Obtener las pelis de terror
+GET http://localhost:1234/movies?genre=Terror
+
+### Crear una peli
+POST http://localhost:1234/movies
+Content-Type: application/json
+{
+    "title": "The Godfather",
+    "year": 1975,
+    "director": "Frnacis Ford Capola",
+    "duration": 190,
+    "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
+    "genre": ["Crime", "Drama"],
+    "rate": 9.2
+}
+
+### Actualizar pelicula
+PATCH http://localhost:1234/movies/gkfcyckygc
+Content-Type: application/json
+{
+    "year": 1993
+}

@@ -1,0 +1,22 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node clase-2/http.js",
+    "dev": "nodemon clase-2/routing.js",
+    "dev:exp": "nodemon clase-2/express.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "4.18.2",
+    "zod": "3.21.4"
+  }
+}
